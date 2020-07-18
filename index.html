@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#ffff5d">
+	<title>TLC Relationship Management Pvt. Ltd. | Task By Prashant Shakya</title>
+	<link rel="shortcut icon" href="images/tlc-logo.png" type="image/png"/><!--Favicon-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"><!--Animate.CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Merienda+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 class="screen-reader-only">TLC Relationship Management Membership Card and Digital Card</h1>
+    <video autoplay muted loop id="myVideo"><!--Background Video -->
+	  <source src="images/video.mp4" type="video/mp4">
+	  Your browser does not support HTML5 video.
+	</video><!--Background Video -->
+	<img alt="TLC Logo" class="main-fixed-logo" src="images/tlc-logo.png"><!--TLC logo -->
+	<button id="myBtn" class="button play-btn a11y-outline-lg-orange" onclick="myFunction()" aria-label="Video play and pause">Pause</button><!--Play Pause Button -->
+
+	<section class="main-cards-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div tabindex="0" class="tlc-card membership-card text-center" aria-label="hotel ole sereni membership card"><!--Membership Card Starts Here -->
+						<a class="download a11y-outline-lg-orange" href="images/membership-card.pdf" target="_blank" download aria-label="Download membership card">Download</a><!--Download Button-->
+						<img alt="This weekend Get 50% off logo" class="offer-img" src="images/offer.png"><!--Offer Image -->
+						<img alt="hotel ole sereni logo" class="hotel-logo" src="images/Hotel-Logo.png"><!--Hotel Logo-->
+						<p>MEMBERSHIP CARD</p>
+						<p>Why Pay Full Price?</p>
+						<img alt="gourmet club project logo" class="program-logo" src="images/Program-Logo.png"><!--Program Logo-->
+						<div class="contact-details clearfix"><!--Customer Contact Details-->
+							<div class="customer-details pull-left">
+								<p>PRASHANT SHAKYA</p>
+								<p>+91 7017720398</p>
+							</div>
+							<div class="valid-date pull-right">
+								<p>Valid till: Nov, 22</p>
+							</div>
+						</div><!--Customer Contact Details-->
+					</div><!--Membership Card Ends Here -->
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="tlc-card digital-card" aria-label="Michelle Digital card"><!--Digital Card Starts Here-->
+						<img alt="hotel ole sereni logo" class="hotel-logo" src="images/Hotel-Logo.png"><!--Hotel Logo-->
+						<div class="avatar">
+							<img alt="Michelle chichi profile image" src="images/avatar.jpg">
+						</div>
+						<p>MICHELLE CHICHI</p>
+						<p>Program Manager</p>
+						<img alt="" class="program-logo" src="images/Program-Logo.png"><!--Program Logo-->
+						<div class="contact-manager" aria-label="Program manager contact information">
+							<div class="address icon">
+								<span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+								<span aria-label="kenya office address: P.O. Box 90521 80100 Mombasa Kenya">P.O. Box 90521 - 80100 Mombasa Kenya</span>
+							</div>
+							<div class="phone icon">
+								<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+								<span><a href="+254 73112 3001" class="a11y-outline-lg-orange" aria-label="call 2 5 4 7 3 1 1 2 3 0 0 1">+254 73112 3001 / 02</a></span>
+							</div>
+							<div class="mobile icon">
+								<span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+								<span><a href="tel:+254 1234 5678" class="a11y-outline-lg-orange" aria-label="call 2 5 4 1 2 3 4 5 6 7 8">+254 1234 5678</a></span>
+							</div>
+							<div class="email icon">
+								<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+								<span><a href="mailto:gourmetclub.englishpoint@tlcgroup.com" class="a11y-outline-lg-orange" aria-label="Email to TLC group for gourmet club membership">gourmetclub.englishpoint@tlcgroup.com</a></span>
+							</div>
+								<div class="website">
+								<a href="www.hotelenglishpoint.com" class="a11y-outline-lg-orange" aria-label="visit hotel english point website (opens in a new tab)">www.hotelenglishpoint.com</a>
+							</div>
+						</div>
+					</div><!--Digital Card Starts Here-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	    new WOW().init(); //Initilize the Wow JavaScript
+	    var video = document.getElementById("myVideo");
+		var btn = document.getElementById("myBtn");
+
+		function myFunction() {
+		  if (video.paused) {
+		    video.play();
+		    btn.innerHTML = "Pause";
+		  } else {
+		    video.pause();
+		    btn.innerHTML = "Play";
+		  }
+		}
+	</script>
+</body>
+</html>

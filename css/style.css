@@ -1,0 +1,301 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow:none;
+    border-radius: 0px;
+    background-color: #fff;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    background-color: #000;
+}
+/*+++++++++++Accessibility CSS ++++++++++*/
+.a11y-outline-lg-orange:focus {
+	outline: 3px dotted #ec6509 !important;
+}
+.screen-reader-only {
+	position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+/*+++++++++++CSS FOR VIDEO+++++++++++++*/
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+}
+/*+++++++++++CSS FOR VIDEO ENDS+++++++++++++*/
+/*+++++++++++CSS FOR PLAY PAUSE BUTTON+++++++++++++*/
+.button {
+	box-sizing: border-box;
+	appearance: none;
+	background-color: transparent;
+	border-radius: 0.6em;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-family: 'Lobster', cursive;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	width: 126px;
+	text-align: center;
+}
+ .button:hover, .button:focus {
+	color: #fff;
+	outline: 0;
+}
+.play-btn {
+	border:2px solid yellow;
+    color: #fff;
+    background-image: linear-gradient(45deg, yellow 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+    z-index: 111;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+ .play-btn:hover {
+	background-position: 0;
+	color: #000;
+}
+/*+++++++++++CSS FOR PLAY PAUSE BUTTON ENDS+++++++++++++*/
+/*+++++++++++CSS FOR MEMBERSHIP CARD STARTS HERE+++++++++++++*/
+img.main-fixed-logo {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+.tlc-card {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffffb8;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s all linear;
+}
+.tlc-card:hover {
+	background-color: #ffffff;
+}
+img.offer-img {
+    position: absolute;
+    left: -13px;
+    top: 20px;
+    width: 125px;
+}
+img.hotel-logo {
+    width: 130px;
+}
+img.program-logo {
+	width: 200px;
+}
+img.hotel-logo + p {
+    font-family: 'Merienda One', cursive;
+    font-size: 20px;
+    color: #000;
+    text-shadow: 1px 2px 4px #1b1918;
+    margin: 0;
+}
+img.hotel-logo + p + p {
+	font-family: 'Poppins',sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #ec6509;
+}
+.contact-details.clearfix {
+    margin-top: 15px;
+    padding: 2px 15px;
+}
+.contact-details.clearfix p {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+.contact-details.clearfix .customer-details {
+	text-align: left;
+}
+.contact-details.clearfix .customer-details p:nth-child(1) {
+	font-weight: bold;
+}
+.contact-details.clearfix .customer-details p:nth-child(2) {
+	color: #ec6509;
+}
+.contact-details.clearfix .valid-date p {
+	color: #ec6509;
+    line-height: 35px;
+    font-size: 12px;
+}
+a.download, a.download:hover {
+    background: #fff;
+    color: #ec6509;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    border: 1px solid #cecfd2;
+}
+/*+++++++++++CSS FOR MEMBERSHIP CARD ENDS HERE+++++++++++++*/
+/*+++++++++++CSS FOR DIGITAL CARD STARTS HERE+++++++++++++*/
+.tlc-card.digital-card {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    max-width: 400px;
+    width: 100%;
+    transform: scale(0.9);
+}
+.main-cards-section .row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tlc-card.digital-card .avatar {
+	width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 15px auto;
+    border: 2px solid #ec6509;
+    border-radius: 50%;
+}
+.tlc-card.digital-card .avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.tlc-card.digital-card .avatar + p {
+    font-size: 20px;
+    font-family: 'Merienda One', sans-serif;
+    margin: 0;
+}
+.tlc-card.digital-card .avatar + p + p {
+	font-family: 'Poppins',sans-serif;
+	color: #ec6509;
+} 
+.contact-manager {
+    background: #333;
+    padding: 20px;
+    margin-top: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+}
+.contact-manager span {
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+.contact-manager span a, .contact-manager span a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.contact-manager .icon {
+	padding: 5px;
+}
+.contact-manager .icon>span:nth-child(1) { 
+	width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #ec6509;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 17px;
+    border: 2px solid #ec6509;
+    margin-right: 15px;
+}
+.contact-manager .icon>span:nth-child(2) {
+	position: relative;
+	top: -4px;
+}
+.website {
+    margin-top: 10px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    text-align: center;
+}
+.website a, .website a:hover, .website a:focus {
+    color: #ddd;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+/*+++++++++++CSS FOR DIGITAL CARD ENDS HERE+++++++++++++*/
+@media screen and (max-width: 991px) {
+	.main-cards-section .row {
+		display: block;
+	}
+	section.main-cards-section {
+	    padding-top: 20px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.tlc-card.digital-card {
+	    text-align: center;
+	    padding: 20px 0px 0px 0px;
+	    max-width: 500px;
+	    width: 100%;
+	    transform: scale(1);
+	    margin-top: 15px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.contact-manager .icon {
+	    padding: 5px 0px;
+	}
+	.contact-manager .icon>span:nth-child(2) {
+	    position: relative;
+	    top: -4px;
+	    font-size: 10px;
+	}
+	.contact-manager .icon>span:nth-child(1) {
+	    margin-right: 5px;
+	}
+	img.offer-img {
+	    width: 85px;
+	}
+	.contact-details.clearfix {
+	    margin-top: 15px;
+	    padding: 2px 0px;
+	}
+	.contact-manager {
+	    padding: 10px;
+	}
+	section.main-cards-section {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+	.website {
+	    padding-top: 5px;
+	    text-align: center;
+	}
+}
+
+    
